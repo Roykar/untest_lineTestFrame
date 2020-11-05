@@ -10,7 +10,7 @@ class readconfig:
             config_path =file_path
         else:
             config_path =os.path.join(os.path.dirname(__file__), '../config/config.ini')
-            print(config_path)
+          #  print(config_path)
         self.cf = configparser.ConfigParser()
         self.cf.read(config_path)  #读取配置文件
 
@@ -26,6 +26,9 @@ class readconfig:
         # print(items)
         # host = self.cf.get("Hosts-WX", "host")  # 获取[Hosts-WX]中host对应的值
         # print(host)
+    def get_email_163(self,param):
+        valus = self.cf.get('Email_163', param)
+        return valus
 
 if __name__=='__main__':
     ts=readconfig()

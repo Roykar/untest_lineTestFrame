@@ -5,7 +5,7 @@
 import unittest
 import os
 from common import HTMLTestReportCN
-
+from common import sendEmail
 case_path= os.path.join(os.path.dirname(__file__),'testcase/')                #测试用例存放路径
 discover = unittest.defaultTestLoader.discover(start_dir=case_path,           #能执行的测试用例的存放路径
                                                pattern='test_*.py',           #执行以"test_"开头的py文件
@@ -25,3 +25,6 @@ html_runner = HTMLTestReportCN.HTMLTestRunner(stream=report_html_file,
                                               description='接口测试矿建实战使用',
                                               tester='Roykar')
 html_runner.run(all_case_suite)
+em_obj = sendEmail.SendEmail(['286955385@qq.com'],'接口测试邮件')
+em_obj.add_html('report_html_path')
+em_obj.send()
