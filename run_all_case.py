@@ -6,15 +6,15 @@ import unittest
 import os
 from common import HTMLTestReportCN
 
-case_path= os.path.join(os.path.dirname(__file__),'testcase/')
-discover = unittest.defaultTestLoader.discover(start_dir=case_path,
-                                               pattern='test_*.py',
+case_path= os.path.join(os.path.dirname(__file__),'testcase/')                #测试用例存放路径
+discover = unittest.defaultTestLoader.discover(start_dir=case_path,           #能执行的测试用例的存放路径
+                                               pattern='test_*.py',           #执行以"test_"开头的py文件
                                                top_level_dir=case_path)
 
-all_case_suite = unittest.TestSuite()
-all_case_suite.addTest(discover)
+all_case_suite = unittest.TestSuite()        #创建测试用例套件对象
+all_case_suite.addTest(discover)             #将所有符合条件的用例加入测试套件
 
-report_path = os.path.join(os.path.dirname(__file__), 'Reports/')
+report_path = os.path.join(os.path.dirname(__file__), 'Reports/')  #测试报告存放路径
 print(report_path)
 report_dir = HTMLTestReportCN.ReportDirectory(report_path)  # 创建一个测试报告路径对象
 report_dir.create_dir('API_TEST')  # 调用创建目录的方法
