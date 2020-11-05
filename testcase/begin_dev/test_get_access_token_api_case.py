@@ -4,10 +4,12 @@
 
 import requests
 import unittest
+from common import readconfig
 
 class TestGetAcessToken(unittest.TestCase):
     def setUp(self):                   #初始化
         self.session = requests.session()
+        self.data= readconfig.readconfig()
     def tearDown(self):                #测试清理
         self.session.close()
 
@@ -16,10 +18,10 @@ class TestGetAcessToken(unittest.TestCase):
         self._testMethodDoc = '获取微信公众号token'#用例说明
         get_param_dict = {
             "grant_type": "client_credential",
-            "appid": "wx927b4f86d662f2e7",
-            "secret": "116dae3b5f18b73d6f7ac42e63af15f0"
+            "appid": self.data.get_host_wx('appid'),
+            "secret": self.data.get_host_wx('secret')
         }
-        hosts = 'https://api.weixin.qq.com'
+        hosts = self.data.get_host_wx('host')
         response = self.session.get(url='%s/cgi-bin/token' % hosts,
                                 params=get_param_dict)
         actual_result = response.status_code
