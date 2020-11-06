@@ -21,10 +21,10 @@ report_dir.create_dir('API_TEST')  # 调用创建目录的方法
 report_html_path = HTMLTestReportCN.GlobalMsg.get_value('report_path')  # 获取测试报告的路径
 report_html_file = open(report_html_path, 'wb')
 html_runner = HTMLTestReportCN.HTMLTestRunner(stream=report_html_file,
-                                              title='微信公众平台测试报告',
-                                              description='接口测试矿建实战使用',
+                                              title='测试报告',
+                                              description='接口测试使用',
                                               tester='Roykar')
 html_runner.run(all_case_suite)
-em_obj = sendEmail.SendEmail(['286955385@qq.com'],'接口测试邮件')
-em_obj.add_html('report_html_path')
-em_obj.send()
+# em_obj = sendEmail.SendEmail(['286955385@qq.com'],'接口测试邮件')
+# em_obj.add_html('report_html_path')
+# em_obj.send()
