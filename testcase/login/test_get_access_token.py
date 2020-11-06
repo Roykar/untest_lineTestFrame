@@ -13,14 +13,16 @@ class testGetAccessToken(unittest.TestCase):
         self._testMethodName = 'case01'    #用例名称
         self._testMethodDoc = '中铝视拓-登录'#用例说明
         get_param_dict_token = {
-            "username": "ccl001",
-            "password": "Nim67D3RL/Wfxp43PCXWY9sLuZ7qoZkzn/Cm1393cDxntQ/BDr0eeHRCUhMF7stelna4wGUkY45b8n/Ro4x2iWyszLYxj87RdNMD6BK5wzZGFCpUanzfOIWTk+vAiiv8uoKbQ+J1FeWQYjkx4YRxhoSnEhhN5NxBr8TVy7awvz8=",
+            "username": self.data.get_hosts_zlst('username'),
+            "password": self.data.get_hosts_zlst('password'),
             "securityCode": ""
         }
-        hosts = 'http://proxy.bl-smart-factory.paas.com'
+        hosts =self.data.get_hosts_zlst('hosts')
         response_token = self.session.get(url='%s/gateway/api-ms/authorize/login' % hosts,
-                                params=get_param_dict_token)
+                                          params=get_param_dict_token)
         actual_result = response_token.json()['resultMsg']
         self.assertEqual(actual_result,'登录成功','登录失败')
         actual_token =response_token.json()['access_token']
         return actual_token
+if __name__ == '__main__':
+    unittest.main()

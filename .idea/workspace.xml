@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -16,22 +19,22 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa4e999-5d22-4d1a-a83c-a67a1998c5b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/gettoken.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/begin_dev/test_creat_tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/createtask/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/createtask/test_create_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/login/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/login/test_get_access_token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/API_TESTV1.0/API_TESTV1.0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/API_TESTV1.1/API_TESTV1.1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/begin_dev/test_creat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/begin_dev/test_get_access_token_api_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/begin_dev/test_get_access_token_api_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/gettoken.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/gettoken.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/readconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/readconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/createtask/test_create_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/createtask/test_create_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/login/test_get_access_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/login/test_get_access_token.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev_Roykar" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,10 +191,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_all_case" />
-        <item itemvalue="Python.test_create_task" />
-        <item itemvalue="Python.gettoken" />
         <item itemvalue="Python.test_get_access_token" />
         <item itemvalue="Python tests.Unittests in test_get_access_token.py" />
+        <item itemvalue="Python.test_create_task" />
+        <item itemvalue="Python.gettoken" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +233,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -254,22 +269,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604564573834" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1604643073309">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1604644951674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604643073309" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1604643073309">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604644951674" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1604644951673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604643073309" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1604643073308">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604644951673" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1604644951673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604643073308" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1604643073309">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604644951673" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1604644951674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604643073309" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604644951674" />
     <state x="461" y="151" key="SettingsEditor" timestamp="1604541032869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -286,17 +301,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="358" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604542087732" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604560431671">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604643876485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604560431671" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604643876485" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$test_create_task.coverage" NAME="test_create_task Coverage Results" MODIFIED="1604634377451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/create_task" />
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$test_creat_tag.coverage" NAME="test_creat_tag Coverage Results" MODIFIED="1604567526734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/begin_dev" />
-    <SUITE FILE_PATH="coverage/untest_lineTestFrame$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1604643073276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untest_lineTestFrame$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1604644951645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$test_get_access_token_api_case.coverage" NAME="test_get_access_token_api_case Coverage Results" MODIFIED="1604625636716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/begin_dev" />
-    <SUITE FILE_PATH="coverage/untest_lineTestFrame$test_get_access_token.coverage" NAME="test_get_access_token Coverage Results" MODIFIED="1604631277631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/login" />
+    <SUITE FILE_PATH="coverage/untest_lineTestFrame$test_get_access_token.coverage" NAME="test_get_access_token Coverage Results" MODIFIED="1604644370864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/login" />
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$Unittests_in_test_get_access_token_py.coverage" NAME="Unittests in test_get_access_token.py Coverage Results" MODIFIED="1604631260970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/login" />
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$gettoken.coverage" NAME="gettoken Coverage Results" MODIFIED="1604634183029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/untest_lineTestFrame$sendEmail.coverage" NAME="sendEmail Coverage Results" MODIFIED="1604560103935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />

@@ -30,6 +30,10 @@ class readconfig:
         valus = self.cf.get('Email_163', param)
         return valus
 
+    def get_hosts_zlst(self,param):
+        valus = self.cf.get('Hosts-Zlst',param)
+        return valus
+
 if __name__=='__main__':
     ts=readconfig()
     host=ts.get_host('host')

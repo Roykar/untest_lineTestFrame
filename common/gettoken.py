@@ -1,11 +1,12 @@
 import requests
-
+from common import readconfig
 class getToken:
     def test_get_token(self):
         self.session = requests.session()
+        self.data = readconfig.readconfig()
         get_param_dict_token = {
-            "username": "ccl001",
-            "password": "Nim67D3RL/Wfxp43PCXWY9sLuZ7qoZkzn/Cm1393cDxntQ/BDr0eeHRCUhMF7stelna4wGUkY45b8n/Ro4x2iWyszLYxj87RdNMD6BK5wzZGFCpUanzfOIWTk+vAiiv8uoKbQ+J1FeWQYjkx4YRxhoSnEhhN5NxBr8TVy7awvz8=",
+            "username": self.data.get_hosts_zlst('username'),
+            "password": self.data.get_hosts_zlst('password'),
             "securityCode": ""
         }
         hosts = 'http://proxy.bl-smart-factory.paas.com'
